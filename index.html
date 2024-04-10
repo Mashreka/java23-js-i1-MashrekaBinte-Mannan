@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="player-names">
+      <form id="name-form">
+        <input type="text" id="player1-name" placeholder="Player 1 Name" />
+        <input type="text" id="player2-name" placeholder="Player 2 Name" />
+        <button type="submit">Start Game</button>
+      </form>
+    </div>
+    <div id="game-container" style="display: none">
+      <div id="game">
+        <h3 id="player1-heading" class="player-heading"></h3>
+        <h3 id="player2-heading" class="player-heading"></h3>
+        <div id="scores">
+          <p id="player1-total-score" class="total-score"></p>
+          <p id="player2-total-score" class="total-score"></p>
+        </div>
+        <div id="round-info">
+          <p id="round-score"></p>
+          <p id="round-count"></p>
+          <p id="current-player"></p>
+        </div>
+        <div id="dice-container">
+          <img src="dice-1.png" alt="Dice" id="dice" class="hidden" />
+        </div>
+        <button id="roll-btn">Roll Dice</button>
+        <button id="freeze-btn">Freeze Score</button>
+      </div>
+      <div id="game-over-message" style="display: none"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

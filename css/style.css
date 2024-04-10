@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #ffffff;
+  background-image: linear-gradient(to top left, #5149c0 0%, #dda0a2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form styling */
+#player-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form elements */
+#name-form {
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"]::placeholder {
+  color: #aaaaaa;
+}
+
+button[type="submit"] {
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #ffffff;
+  color: #444444;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Game styling */
+#game-container {
+  display: none;
+}
+
+#game {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Player heading */
+.player-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/* Scores */
+#scores {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.total-score {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/* Round info */
+#round-info {
+  margin-bottom: 2rem;
+}
+
+#round-score,
+#round-count,
+#current-player {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/* Dice container */
+#dice-container {
+  margin-bottom: 2rem;
+}
+
+#dice {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Roll and freeze buttons */
+#roll-btn,
+#freeze-btn {
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #ffffff;
+  color: #444444;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+
+#roll-btn:hover,
+#freeze-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+#game-over-message {
+  display: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ce0909;
+  background-color: rgb(219, 189, 239);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
